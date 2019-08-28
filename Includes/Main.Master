@@ -1,0 +1,418 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Selectcon.Main" %>
+
+<!DOCTYPE html>
+
+<html class="html__responsive">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+
+    <!----><link rel="stylesheet" type="text/css" href="../Content/stacks.css?v=1">
+    <link rel="stylesheet" type="text/css" href="../Content/primary.css?v=1">
+    <link rel="stylesheet" type="text/css" href="../Content/secondary.css?v=1">
+    <link rel="stylesheet" type="text/css" href="../Content/story.css?v=1">
+	
+	
+	    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="https://selectcon.com/images/favicon.png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://selectcon.com/assets/bootstrap4/css/bootstrap.min.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://selectcon.com/assets/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://selectcon.com/assets/bootstrap4/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" >
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://selectcon.com/assets/fancybox3/dist/jquery.fancybox.min.css">
+	  <script src="https://selectcon.com/assets/fancybox3/dist/jquery.fancybox.min.js"></script>
+
+    <link rel="stylesheet" href="https://selectcon.com/assets/hover.css">
+    <link rel="stylesheet" href="https://selectcon.com/assets/css.css?52555">
+	<script src="https://selectcon.com/assets/js.js?19199"></script>
+
+	<!-- CSS ของคุณแมน -->
+	<link rel="stylesheet" href="https://selectcon.com/assets/manstyle.css" > 
+	
+    
+    <script type="text/javascript" src="../Scripts/primary.js"></script>
+	
+    <title>Selectcon Forum</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding-top:0px;">
+
+
+ <!--  MAIN TOP MENU -->
+<div class="maintop">
+
+	<div class="container d-none d-md-block">
+    <a href="//www.selectcon.com">
+		<img src="//www.selectcon.com/images/logo.png?222" style="max-width:300px; margin: 10px 0px 10px 0px;">
+	</a>
+	<!--<span class="text-white " style=" top: 84px; left: 246px;position: absolute;">ตลาดซื้อ-ขาย-บริการรับสร้างบ้าน</span>-->
+	<!--<img src="images/Headline-THAI.png" />-->
+	<p class="float-right" style="color: #5e5e5e;margin-top: 50px;font-size: 24px;">เพื่อการ..ว่าจ้างสร้างบ้าน..แบบ วิน วิน</p>
+	</div>
+
+<style>
+@media (min-width: 992px)
+{
+	.navbar-expand-lg {
+		height:50px;
+	}
+}
+</style>
+
+    
+
+
+  <nav class="navbar navbar-expand-lg container">
+	<a href="//www.selectcon.com" class="d-md-none"><img src="//www.selectcon.com/images/logo100.png?222" class="img-fluid"></a>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color:#5e5e5e;">
+    	<i class="fas fa-bars"></i>
+  	</button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="left:0px">
+      <ul id="menunav" class="navbar-nav mr-auto">
+        <li class="nav-item hvr-sweep-to-top">
+          <a class="nav-link " href="//www.selectcon.com">หน้าแรก <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item hvr-sweep-to-top">
+          <a class="nav-link" href="//www.selectcon.com/บริการของเรา.asp">บริการของเรา</a>
+        </li>
+        <li class="nav-item hvr-sweep-to-top">
+          <a class="nav-link" href="//www.selectcon.com/selectcon_report.asp">ผลงานการว่าจ้างสร้างบ้าน</a>
+        </li>
+        <li class="nav-item hvr-sweep-to-top">
+          <a class="nav-link" href="//www.selectcon.com/เรื่องน่ารู้เพื่อการสร้างบ้าน.asp">เรื่องน่ารู้เพื่อการสร้างบ้าน</a>
+        </li>
+		<!--
+        <li class="nav-item hvr-sweep-to-top">
+          <a class="nav-link" href="for_bid.asp">เวทีประมูลงาน</a>
+        </li>
+		-->
+        <li class="nav-item hvr-sweep-to-top">
+          <a class="nav-link" href="//www.selectcon.com/build_a_house.asp">ประสบการณ์สร้างบ้าน</a>
+        </li>
+		<!--
+        <li class="nav-item hvr-sweep-to-top">
+          <a class="nav-link" href="SiteMap.asp">Sitemap</a>
+        </li>
+		-->
+        <li class="nav-item hvr-sweep-to-top">
+          <a class="nav-link" href="//www.selectcon.com/forum/">เว็บบอร์ด</a>
+        </li>
+        <li class="nav-item hvr-sweep-to-top">
+          <a class="nav-link" href="ContactUs.asp">ติดต่อเรา</a>
+        </li>
+        <li class="nav-item hvr-sweep-to-top">
+          <a class="nav-link" href="//www.selectcon.com/login.aspx">Login/สมัครสมาชิก</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div style="background-color: #ECECEC; height: 50px;">
+  <div class="container">
+    <div class="row">
+
+		<div class="col-sm-4 col-9">
+			 <style>
+				.gsc-control-cse
+				{
+					border-color: transparent !important;
+					background-color: transparent !important;
+					margin-top: -5px;
+				}
+			</style>
+
+			<script type="text/javascript">
+			  (function() {
+				var cx = '016037601411820400315:3ex849f9nlm';
+				var gcse = document.createElement('script');
+				gcse.type = 'text/javascript';
+				gcse.async = true;
+				gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(gcse, s);
+			  })();
+
+				$(document).ready(function(){
+
+					$("body").mousemove(function(event){
+                        $(".gsc-input").attr("placeholder", "ค้นหาข้อมูลใน Selectcon").delay(800);
+                        $('button.gsc-search-button').addClass("s-btn");
+                        $('input.gsc-input').addClass("s-input");
+                    });
+                });
+
+                function LogOut() {
+                    $('[name=action]').val("LOGOUT");
+                    $("#main").submit();
+                }
+
+			</script>
+			<gcse:search></gcse:search>
+
+		</div>
+
+		<div class="col-sm-4 d-none d-sm-block"></div>
+		<div class="col-sm-4 col-3 text-right">
+			<p>
+				<a href="#" title="Thai Language"><img src="//www.selectcon.com/images/th.png" style="width: 25px;margin-top: 10px;"></a>
+				<a href="#" title="English Language"><img src="//www.selectcon.com/images/en.png" style="width: 25px;margin-top: 10px;" ></a>
+			</p>
+		</div>
+    </div>
+  </div>
+</div>
+<!--  MAIN TOP MENU -->
+
+    <%--<div class="home-page unified-theme">
+        <div class="old-hero _small _darken fs-body2 pt-0">
+            <div class="-container">
+                <div class="clear-both">
+                    <div class="float-left">
+                        <b>พื้นที่แลกเปลี่ยนความคิดเห็นในการสร้างบ้าน</b> เน้นการก่อสร้างบ้านที่ถูกต้องตามหลักวิชาการ
+                    </div>
+                    <div class="float-right">   
+                         <ol id="pnlLogin" runat="server"  class="-secondary js-secondary-topbar-links drop-icons-responsively the-js-is-handling-responsiveness">
+                          <li class="-ctas" >
+                            <a id="btnLogin" href="../Members/Login" class="login-link s-btn btn-topbar-clear py8 text-white" role="button" rel="nofollow">Log In</a>
+                            <a id="btnSignup" href="../Members/Register" class="login-link s-btn s-btn__primary py8 btn-topbar-primary" rel="nofollow">Sign Up</a>
+                          </li>
+                         </ol>
+                        <ol id="pnlProfile" runat="server"  class="-secondary js-secondary-topbar-links drop-icons-responsively the-js-is-handling-responsiveness">
+                            <li class="-ctas" >
+                              <a href="../Members/User" class="my-profile login-link s-btn btn-topbar-clear py8 text-white">
+                                <div class="gravatar-wrapper-24" title="suksan suksana">
+                                <img src="" alt="" width="24" height="24" class="-avatar" onerror='imgError(this);'></div>
+                              </a>
+                                
+                            </li>
+                            <li class="-item" >
+                                <input type="hidden" name="action" />
+                                <button id="btnLogOut" onclick="LogOut();" class="login-link s-btn s-btn__primary py8 btn-topbar-primary">Log Out</button>
+                            </li>
+                        </ol>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    </div>--%>
+    
+
+  
+        <div class="topnav old-hero _small _darken">
+          <div class="fs-body2 pt-0">
+            <b>พื้นที่แลกเปลี่ยนความคิดเห็นในการสร้างบ้าน</b> เน้นการก่อสร้างบ้านที่ถูกต้องตามหลักวิชาการ
+          </div>
+          <div id="pnlLogin" runat="server" class="fs-body2 pt-0 float-right">
+            <a  href="../Members/Login" class="login-link s-btn btn-topbar-clear py8 text-white" role="button" rel="nofollow">Log In</a>
+              <a  href="../Members/Register" class="login-link s-btn s-btn__primary py8 btn-topbar-primary" rel="nofollow">Sign Up</a>
+          </div>
+          <div id="pnlProfile" runat="server" class="fs-body2 pt-0 float-right">
+            
+            <a href="../Members/User" class="my-profile login-link s-btn btn-topbar-clear py8 text-white">
+                <img src="" class="user-image" alt="User Image" id="UserImage" onerror="imgError(this);" runat="server" />
+            </a>
+            <button type="button" onclick="LogOut();" class="login-link s-btn s-btn__primary py8 btn-topbar-primary" >LogOut</button>
+              
+          </div>
+        </div>
+
+
+	 <div class="container">
+            <div data-is-here-when="md lg" class="left-sidebar js-pinned-left-sidebar" id="left-sidebar">
+              <div class="left-sidebar--sticky-container js-sticky-leftnav">
+                <nav role="navigation">
+                  <ol class="nav-links">
+                    <li>
+                      <ol class="nav-links">
+                        <li class="home youarehere">
+                         <a href="../default" class="pl8 js-gps-track nav-links--link">Home</a>
+                        </li>
+                        <li class="category">
+                          <a id="nav-cate" href="../area/Category.aspx" class=" js-gps-track nav-links--link">หมวดหมู่</a>
+                        </li>
+                          <% if (IsAdmin) {%>
+                              <li class="userlist">
+                             <a href="../Members/UserList.aspx" class="pl8 js-gps-track nav-links--link">จัดการผู้ใช้</a>
+                            </li>
+                            <li class="admin d-none">
+                             <a href="../Members/UserList.aspx" class="pl8 js-gps-track nav-links--link">จัดการผู้ใช้</a>
+                            </li>
+                          <% } %>
+                        
+<%--                        <li class="tag">
+                          <a id="nav-tags" href="../area/Tags" class=" js-gps-track nav-links--link">แท็ก</a>
+                        </li>
+                        <li class="user">
+                          <a id="nav-users" href="../Members/UserList" class=" js-gps-track nav-links--link">ผู้ใช้</a>
+                        </li>--%>
+                      </ol>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+
+                <div id="content" class="snippet-hidden">
+                    <div class="inner-content">
+                        <form id="main" runat="server">
+                            <input name="action" type="hidden" />
+
+                            <div id="mainbar">
+                                <div class="error-msg d-none">
+                                  <i class="fa fa-times-circle"></i>
+                                  <span id="error-msg"></span>
+                                </div>
+									<div id="question-header" class="grid d-none">
+                                        <h1 id="question-title" class="grid--cell fs-headline1 fl1 ow-break-word"></h1>         
+                                        <div class="pl8 aside-cta grid--cell d-none" role="navigation" aria-label="ask new question">
+                                            <a id="btnAsk" runat="server" href="../area/ask" class="d-inline-flex ai-center ws-nowrap s-btn s-btn__primary">
+                                                Ask Question
+                                            </a>
+                                        </div>
+                                    </div>
+                                <asp:ContentPlaceHolder ID="C_mainbar" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                            <div id="sidebar">
+                                <asp:ContentPlaceHolder ID="C_sidebar" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+		
+		
+								
+		
+		
+		
+<!--  MAIN FOOTER -->
+<footer class="text-center">
+	<div style="background-color: #ececec;">
+		<div class="container" style="padding-top: 10px;">
+
+			<%--<div class="row" style="border-top: 1px solid #5e5e5e;border-bottom: 1px solid #5e5e5e;padding: 10px;display:none">
+				<div class="col-md-8 col-sm-12 text-left">
+					<i class="fab fa-2x fa-instagram"></i>&nbsp;
+					<a href="https://www.facebook.com/Selectcon.Bangkok/" style="color:#fff;" target="_blank"><i class="fab fa-2x fa-facebook-square"></i></a>&nbsp;
+					<i class="fab fa-2x fa-youtube"></i>
+				</div>
+
+				<div class="col-md-4 col-sm-12 text-left" style="left:0">
+					<form action="#?" class="form-inline">
+						<div class="form-group">
+							<label>E-NEWS LETTER</label>
+							<input type="email" name="newsletter" class="form-control-sm mx-sm-3" placeholder="Please enter your email" required>
+							<button type="submit" class="btn btn-sm btn-success"><i class="fas fa-thumbs-up"></i></button>
+						</div>
+					</form>
+				</div>
+			</div>--%>
+
+
+			<div class="row">
+				<div class="col-md-4 col-sm-12 text-left footer-color-link" style="padding-top: 10px;">
+					<div style="border-bottom:1px solid #5e5e5e;margin-bottom: 10px;"><strong>เกี่ยวกับบริการของเรา</strong></div>
+
+					<a href="//www.selectcon.com/big-service.asp" class="footer-color-link">ปิดประตูความเสียหาย จากการทิ้งงานสร้างบ้าน</a><br/>
+					<a href="//www.selectcon.com/what_you_get.asp" class="footer-color-link">ท่านจะได้อะไรจากการใช้บริการ</a><br/>
+					<a href="//www.selectcon.com/the_truth.asp" class="footer-color-link">ความโปร่งใสในการให้บริการ</a><br/>
+					<a href="//www.selectcon.com/selectcon_market.asp" class="footer-color-link">Selectcon บวกค่าบริการในราคาของผู้รับเหมาหรือไม่ ?</a><br/>
+					<a href="//www.selectcon.com/rule.asp" class="footer-color-link">กติกาในการใช้บริการ</a><br/>
+					<br>
+					<a href="//www.selectcon.com" class="d-none d-md-block" style="margin-top: 20px"><img src="//www.selectcon.com/images/logo100.png" class="img-fluid"></a>
+				</div>
+
+				<div class="col-md-4 col-sm-12 text-left footer-color-link" style="padding-top: 10px;">
+					<div style="border-bottom:1px solid #5e5e5e;margin-bottom: 10px;">
+						<strong>บริการของเรา</strong>
+					</div>
+				  <p><a href="//www.selectcon.com/บริการของเรา.asp" class="footer-color-link">ช่วยเตรียมการเพื่อสร้างบ้าน... และว่าจ้างผู้รับเหมา</a></p>
+					<p><a href="//www.selectcon.com/big-service.asp" class="footer-color-link">ช่วยเตรียมการเพื่อสร้างบ้าน... และว่าจ้างผู้รับเหมา<br/>แบบ Extra Service</a></p>
+				  <p><a href="//www.selectcon.com/new-service-1.asp" class="footer-color-link">บริการ &quot;พิสูจน์ทราบ&quot; ข้อเสียเปรียบ ก่อนเซ็นต์สัญญาสร้างบ้าน</a></p>
+					<p><br/>
+					  <a href="//www.selectcon.com/co-service.asp" class="footer-color-link">บริการ รับเป็นคนกลาง <br>
+			      เพื่อลดความเสี่ยง..ในการว่าจ้างผู้รับเหมา</a></p>
+					<p><a href="//www.selectcon.com/บริการของเรา.asp" class="footer-color-link">บริการ จัดหาที่ปรึกษาควบคุมงาน... ฝ่ายผู้ว่าจ้าง</a><br/>
+				  </p>
+				</div>
+				
+				<div class="col-md-4 col-sm-12 text-left footer-color-link" style="padding-top: 10px;">
+					<div style="border-bottom:1px solid #5e5e5e;margin-bottom: 10px;"><strong>ติดต่อเรา</strong></div>
+					SELECTCON CO., LTD<br> เลขที่ 700/74 อาคารรีเจนท์ศรีนครินทร์<br>ซอยศรีนครินทร์ 18 ถนนศรีนครินทร์<br> แขวงพัฒนาการ เขตสวนหลวง กรุงเทพฯ 10250<br>
+					<br> โทร: 02-722-6891<br> แฟกซ์: 02-722-9206<br> มือถือ: 081-846-8948, 086-319-3119<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(นอกเวลาการและวันอาทิตย์)<br/>
+					อีเมล์: <a href="mailto:tidshui@gmail.com" class="footer-color-link">tidshui@gmail.com</a><br><br>
+					<h2 class="text-center"><i class="fas fa-phone" style=" transform: rotate(90deg);"></i> 02 722 6891</h2>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-39884387-1']);
+				_gaq.push(['_trackPageview']);
+
+				(function() {
+					var ga = document.createElement('script');
+					ga.type = 'text/javascript';
+					ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(ga, s);
+				})();
+			</script>
+
+			<div class="row" style="border-top: 1px solid #5e5e5e;padding: 10px;">
+				<div class="col-md-12 col-sm-12 text-center">
+					<!--BEGIN WEB STAT CODE-->
+					<script type="text/javascript " src="https://lvs.truehits.in.th/datasecure/t0031076.js "></script>
+					</noscript>
+					<!-- END WEBSTAT CODE -->
+					©2018 Selectcon. All rights reserved. I Privacy Policy I Terms of Use
+				</div>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    $(function () {
+
+            
+        
+       
+    });
+
+</script>
+
+<!--  MAIN FOOTER -->

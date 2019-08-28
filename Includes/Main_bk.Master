@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Selectcon.Main" %>
+
+<!DOCTYPE html>
+
+<html class="html__responsive">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../Content/stacks.css">
+    <link rel="stylesheet" type="text/css" href="../Content/primary.css">
+
+
+    <script type="text/javascript" src="../Scripts/jquery.min.js"></script>
+
+    <title>SelectCon Forum</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="home-page unified-theme">
+    <header class="top-bar js-top-bar top-bar__network _fixed">
+        <div class="-container">
+            <div class="-main p6">
+                <a href="#" class="left-sidebar-toggle p0 ai-center jc-center js-left-sidebar-toggle"><span class="ps-relative"></span></a>
+                <a href="#" class="-logo js-gps-track">
+                <span class="-img _glyph">SelectCon</span>
+                </a>
+            </div>
+
+            <div class="searchbar js-searchbar" role="search">
+                <div class="ps-relative">
+                    <input name="q" type="text" placeholder="Search…" value="" autocomplete="off" maxlength="240" class="s-input js-search-field ">
+                    <button type="submit" aria-label="Search…" class="s-btn s-btn__primary s-btn__icon btn-topbar-primary js-search-submit">
+                    </button>
+                </div>
+            </div>
+
+            <ol class="-secondary js-secondary-topbar-links drop-icons-responsively the-js-is-handling-responsiveness">
+              <li class="-ctas">
+                <a href="#Login" class="login-link s-btn btn-topbar-clear py8" rel="nofollow">Log In</a>
+                <a href="#SignUp" class="login-link s-btn s-btn__primary py8 btn-topbar-primary" rel="nofollow">Sign Up</a>
+
+              </li>
+                <%--<li class="-dialog-container js-topbar-dialog-corral">
+                  <div class="topbar-dialog leftnav-dialog js-leftnav-dialog dno" style="display: block; top: 47px;">
+                    <div class="left-sidebar js-unpinned-left-sidebar" data-is-here-when="sm" id="left-sidebar2">
+                      <div class="left-sidebar--sticky-container js-sticky-leftnav">
+                        <nav role="navigation">
+                          <ol class="nav-links">
+                            <li> </li>
+                            <li class=" youarehere">
+                              <a href="#" class="pl8 js-gps-track nav-links--link" >Home</a>
+                            </li>
+
+                            <li>
+                              <ol class="nav-links">
+                                <li class="fs-fine tt-uppercase ml8 mt16 mb4 fc-light">Public</li>
+                                <li>
+                                  <a id="nav-questions2" href="https://stackoverflow.com/questions" class="pl8 js-gps-track nav-links--link -link__with-icon" data-gps-track="top_nav.click({is_current:false, location:1, destination:1})">
+                                   <span class="-link--channel-name">Stack Overflow</span>
+                                  </a>
+                                </li>
+
+                                <li>
+                                  <a id="nav-tags2" href="#" class=" js-gps-track nav-links--link">Tags</a>
+                                </li>
+                                <li>
+                                  <a id="nav-users2" href="https://stackoverflow.com/users" class=" js-gps-track nav-links--link">Users</a>
+                                </li>
+                              </ol>
+                            </li>
+            
+                          </ol>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </li>--%>
+            </ol>
+
+        </div>
+    </header>
+
+    <div class="old-hero _small _darken .fs-body2">
+        <div class="-container">
+            <b>พื้นที่แลกเปลี่ยนความคิดเห็นในการสร้างบ้าน</b> เน้นการก่อสร้างบ้านที่ถูกต้องตามหลักวิชาการ
+        </div>
+    </div>
+
+        <div class="container">
+            <div data-is-here-when="md lg" class="left-sidebar js-pinned-left-sidebar" id="left-sidebar">
+              <div class="left-sidebar--sticky-container js-sticky-leftnav">
+                <nav role="navigation">
+                  <ol class="nav-links">
+                    <li> </li>
+                    <li>
+                      <a href="https://selectcon.com" class="pl8 js-gps-track nav-links--link">เว็บไซต์หลัก</a>
+                    </li>
+
+                    <li>
+                      <ol class="nav-links">
+                        <li class=" youarehere">
+                         <a href="#" class="pl8 js-gps-track nav-links--link">Home</a>
+                        </li>
+                        <li>
+                          <a id="nav-pin" href="#" class="js-gps-track nav-links--link">กระทู้มีประโยชน์</a>
+                        </li>
+                        <li>
+                          <a id="nav-cate" href="#" class=" js-gps-track nav-links--link">หมวดหมู่</a>
+                        </li>
+                        <li>
+                          <a id="nav-tags" href="#" class=" js-gps-track nav-links--link">แท็ก</a>
+                        </li>
+                        <li>
+                          <a id="nav-users" href="#" class=" js-gps-track nav-links--link">ผู้ใช้</a>
+                        </li>
+                      </ol>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+
+                <div id="content" class="snippet-hidden">
+                    <div class="inner-content">
+                        <form id="main" runat="server">
+                            <div id="mainbar">
+                                <asp:ContentPlaceHolder ID="C_mainbar" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                            <div id="sidebar">
+                                <asp:ContentPlaceHolder ID="C_sidebar" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            
+
+        </div>
+
+        <footer id="footer" class="site-footer js-footer" role="contentinfo">
+          <div class="site-footer--container">
+            <div class="site-footer--logo">
+            </div>
+            <nav class="site-footer--nav">
+            </nav>
+            <div class="site-footer--copyright fs-fine">
+            </div>
+          </div>
+        </footer>
+   
+</body>
+</html>
